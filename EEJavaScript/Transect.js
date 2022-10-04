@@ -24,7 +24,7 @@ function maskClouds(image) {
   // Return the masked image, scaled to [0, 1].
   return image.updateMask(mask).divide(10000).copyProperties(image, ["system:time_start"]);
 }
-
+ 
 //2.2) Adding Spectral Indices
 ///////////////////////////////
 
